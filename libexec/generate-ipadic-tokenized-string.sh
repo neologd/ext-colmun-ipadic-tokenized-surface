@@ -22,7 +22,7 @@ BASEDIR=$(cd $(dirname $0);pwd)
 PROGRAM_NAME=generate-ipadic-tokenized-string
 ECHO_PREFIX="[${PROGRAM_NAME}] :"
 
-IPADIC_DIR=`mecab-config --dicdir`"/ipadic"
+IPADIC_DIR=`mecab-config --dicdir`"/ipadic_more_fixed2"
 MECAB_COMMAND="mecab -d ${IPADIC_DIR} -Owakati"
 
 TMP_MECAB_RESULT=$BASEDIR/../extension/tmp_ipedic_tokenized_surface
